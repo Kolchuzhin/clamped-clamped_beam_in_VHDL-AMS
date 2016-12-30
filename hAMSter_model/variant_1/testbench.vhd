@@ -4,8 +4,8 @@
 --
 -- Clamped-Clamped Beam is driven by a voltage (see key_load): 
 --					1. sweep computing the pull-in voltage 
---					2. puls
 --					2. chirp
+--					3. puls
 --
 -- Author: Vladimir Kolchuzhin, LMGT, TU Chemnitz
 -- <vladimir.kolchuzhin@ieee.org>

@@ -57,6 +57,7 @@
 -------------------------------------------------------------------------------
 -- ID: testbench.vhd
 -- ver. 0.20 19.11.2011 OK in hAMSter
+-- ver. 0.21 14.05.2018
 --*****************************************************************************
 --*****************************************************************************
 use work.electromagnetic_system.all;
@@ -69,10 +70,10 @@ entity testbench is
 end;
 
 architecture behav of testbench is
-  terminal struc1_ext,struc2_ext: translational; 	  --
-  terminal lagrange1_ext,lagrange2_ext:translational; --
-  terminal master1_ext,master2_ext:translational;	  --
-  terminal elec1_ext,elec2_ext: electrical;           --
+  terminal struc1_ext,struc2_ext: translational;	--
+  terminal lagrange1_ext,lagrange2_ext:translational;	--
+  terminal master1_ext,master2_ext:translational;	--
+  terminal elec1_ext,elec2_ext: electrical;		--
 
   -- Modal displacement
   quantity q_ext1 across fm_ext1 through struc1_ext;          -- Modal amplitude 1
@@ -82,7 +83,7 @@ architecture behav of testbench is
   quantity p_ext2 across r_ext2  through lagrange2_ext;
   -- Nodal displacement
   quantity u_ext1 across f_ext1  through master1_ext;          -- Nodal amplitude 1
-  quantity u_ext2 across f_ext2  through master1_ext;          -- Nodal amplitude 2
+  quantity u_ext2 across f_ext2  through master2_ext;          -- Nodal amplitude 2
   -- Electrical ports
   quantity v_ext1 across i_ext1  through elec1_ext;           -- Conductor 1
   quantity v_ext2 across i_ext2  through elec2_ext;           -- Conductor 2

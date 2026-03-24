@@ -31,11 +31,19 @@ There are two element loads: acceleration and a uniform pressure load:
 
 # ROM model: 
 ## extracted parameters:
-The number of selected modes: 2
-* m_1=0.185207030268E-11 kg
-* m_2=0.194379055271E-11 kg
+* number of basis functions (selected modes) = 2: i=1, j=0, k=3
+ * f<sub>1</sub>=0.20869E+07 Hz  -- frequency mode 1
+ * f<sub>2</sub>=0.10294E+08 Hz  -- frequency mode 3
+ 
+ + m<sub>1</sub>=0.185207030268E-11 kg
+ + m<sub>2</sub>=0.194379055271E-11 kg
+ 
+* 2 conductors => 1 capacitance C<sub>12</sub>
+ 
+* 2 master nodes
+
 ## damping:
-dm_1=0 and dm_2=0 in original model (see initial.vhd) !!!
+dm_1=0 and dm_2=0 in original model (see [initial.vhd](https://github.com/Kolchuzhin/clamped-clamped_beam_in_VHDL-AMS/blob/master/original_model/%20initial.vhd)) !!!
 
 # VHDL-AMS model in hAMSter:
 * ccbeam.vhd

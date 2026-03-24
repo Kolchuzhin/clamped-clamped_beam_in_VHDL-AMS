@@ -32,8 +32,8 @@ There are two element loads: acceleration and a uniform pressure load:
 # ROM model: 
 ## extracted parameters:
 * number of basis functions (selected modes) = 2: i=1, j=0, k=3
- * f<sub>1</sub>=0.20869E+07 Hz  -- frequency mode 1
- * f<sub>2</sub>=0.10294E+08 Hz  -- frequency mode 3
+  * f<sub>1</sub>=0.20869E+07 Hz  -- frequency mode 1
+  * f<sub>2</sub>=0.10294E+08 Hz  -- frequency mode 3
  
  + m<sub>1</sub>=0.185207030268E-11 kg
  + m<sub>2</sub>=0.194379055271E-11 kg
@@ -42,12 +42,13 @@ There are two element loads: acceleration and a uniform pressure load:
  
 * 2 master nodes
 
-## damping:
-dm_1=0 and dm_2=0 in original model (see [initial.vhd](https://github.com/Kolchuzhin/clamped-clamped_beam_in_VHDL-AMS/blob/master/original_model/%20initial.vhd)) !!!
+* damping:
+ dm_1=0 and dm_2=0 in original model (see [initial.vhd](https://github.com/Kolchuzhin/clamped-clamped_beam_in_VHDL-AMS/blob/master/original_model/%20initial.vhd)) !!!
+
 
 # VHDL-AMS model in hAMSter:
-* ccbeam.vhd
-* testbench.vhd
+* [ccbeam.vhd](https://github.com/Kolchuzhin/clamped-clamped_beam_in_VHDL-AMS/blob/master/hAMSter_model/variant_2/ccbeam.vhd)
+* [testbench.vhd](https://github.com/Kolchuzhin/clamped-clamped_beam_in_VHDL-AMS/blob/master/hAMSter_model/variant_2/testbench.vhd)
 
 # Benchmark: 
 ## Calculation of voltage displacement functions up to pull-in:
